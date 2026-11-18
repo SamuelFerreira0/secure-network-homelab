@@ -1,0 +1,25 @@
+Teste VPN WireGuard por perfil (2026-11-10 e 11)
+Cliente: portatil do Samuel (rede de casa), endpoint 192.168.1.180:51820
+Servidor: wg-escritorio 10.10.90.1/24, UDP 51820
+
+Perfil Gestao (10.10.90.10), handshake feito:
+10.10.20.20:22 ABERTA
+10.10.20.30:443 ABERTA
+10.10.70.10:22 ABERTA
+10.10.70.10:443 ABERTA
+10.10.60.10:22 ABERTA
+10.10.70.10:445 FECHADA
+10.10.60.10:80 FECHADA
+
+Perfil Financeiro (10.10.90.30), handshake feito:
+10.10.20.20:445 ABERTA
+10.10.20.30:443 ABERTA
+10.10.20.20:22 FECHADA
+10.10.20.30:22 FECHADA
+10.10.70.10:443 FECHADA
+10.10.60.10:22 FECHADA
+10.10.10.10:22 FECHADA
+
+DNS pela VPN (Unbound em 10.10.90.1):
+dig @10.10.90.1 ficheiros.escritorio.test -> 10.10.20.20
+dig @10.10.90.1 example.com -> resolve

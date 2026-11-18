@@ -1,0 +1,6 @@
+<!-- Acrescento ao /var/ossec/etc/ossec.conf do agente na ficheiros (VM 221) -->
+<ossec_config>
+  <syscheck>
+    <directories realtime="yes" check_all="yes">/srv/samba</directories>
+  </syscheck>
+</ossec_config>

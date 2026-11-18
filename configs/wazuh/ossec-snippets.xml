@@ -1,0 +1,24 @@
+<!-- Blocos acrescentados no fim de /var/ossec/etc/ossec.conf do manager (VM wazuh) -->
+<ossec_config>
+  <remote>
+    <connection>syslog</connection>
+    <port>514</port>
+    <protocol>udp</protocol>
+    <allowed-ips>10.10.70.1</allowed-ips>
+    <local_ip>10.10.70.10</local_ip>
+  </remote>
+</ossec_config>
+
+<ossec_config>
+  <command>
+    <name>opn-block</name>
+    <executable>opn-block.sh</executable>
+    <timeout_allowed>yes</timeout_allowed>
+  </command>
+  <active-response>
+    <command>opn-block</command>
+    <location>server</location>
+    <rules_id>100100</rules_id>
+    <timeout>300</timeout>
+  </active-response>
+</ossec_config>

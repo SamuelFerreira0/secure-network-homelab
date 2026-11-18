@@ -1,0 +1,20 @@
+Maquina: admin-gestao  utilizador Samba: admin1  Sun 25 Oct 2026 14:37:37 WET
+partilha   leitura  escrita
+ti         OK       OK
+financeiro NEGADA   NEGADA
+staff      NEGADA   NEGADA
+geral      OK       OK
+
+Maquina: cliente-financeiro  utilizador Samba: ana  Sun 25 Oct 2026 14:37:39 WET
+partilha   leitura  escrita
+ti         NEGADA   NEGADA
+financeiro OK       OK
+staff      NEGADA   NEGADA
+geral      OK       NEGADA
+
+Maquina: cliente-staff  utilizador Samba: rui  Sun 25 Oct 2026 14:37:41 WET
+partilha   leitura  escrita
+ti         NEGADA   NEGADA
+financeiro NEGADA   NEGADA
+staff      OK       OK
+geral      OK       NEGADA

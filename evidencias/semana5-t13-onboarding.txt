@@ -1,0 +1,24 @@
+Tue Nov  3 04:25:08 PM WET 2026
+== acesso as partilhas
+t13gestao -> ti: ACESSO (esperado ACESSO) OK
+t13gestao -> geral: ACESSO (esperado ACESSO) OK
+t13gestao -> financeiro: NEGADO (esperado NEGADO) OK
+t13financeiro -> financeiro: ACESSO (esperado ACESSO) OK
+t13financeiro -> geral: ACESSO (esperado ACESSO) OK
+t13financeiro -> staff: NEGADO (esperado NEGADO) OK
+t13staff -> staff: ACESSO (esperado ACESSO) OK
+t13staff -> geral: ACESSO (esperado ACESSO) OK
+t13staff -> ti: NEGADO (esperado NEGADO) OK
+== ficheiros gerados
+t13gestao: guia-t13gestao.md wg-t13gestao.conf  | Address = 10.10.90.10/32 | chave privada: 1 | marcadores por preencher no guia: 0
+t13financeiro: guia-t13financeiro.md wg-t13financeiro.conf  | Address = 10.10.90.30/32 | chave privada: 1 | marcadores por preencher no guia: 0
+t13staff: guia-t13staff.md wg-t13staff.conf  | Address = 10.10.90.40/32 | chave privada: 1 | marcadores por preencher no guia: 0
+== grupos
+gestao:x:1002:admin1,t13gestao
+financeiro:x:1001:ana,t13financeiro
+staff:x:50:rui,t13staff
+== registo
+data,utilizador,departamento,aprovador,ip_vpn,estado
+2026-11-03,t13gestao,gestao,teste,10.10.90.10,ativo
+2026-11-03,t13financeiro,financeiro,teste,10.10.90.30,ativo
+2026-11-03,t13staff,staff,teste,10.10.90.40,ativo

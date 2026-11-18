@@ -1,0 +1,13 @@
+Maquina: ficheiros  Sun 25 Oct 2026 14:39:23 WET
+--- configuracao
+SMB3
+445
+--- portas Samba a escuta
+0.0.0.0:445
+[::]:445
+
+Maquina: admin-gestao  Sun 25 Oct 2026 14:39:24 WET
+--- pedido SMB1 (NT1) ao servidor
+smbXcli_negprot_smb1_done: No compatible protocol selected by server.
+Protocol negotiation to server ficheiros.escritorio.test (for a protocol between NT1 and NT1) failed: NT_STATUS_INVALID_NETWORK_RESPONSE
+RESULTADO: SMB1 recusado (esperado)

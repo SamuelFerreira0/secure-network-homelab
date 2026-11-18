@@ -1,0 +1,10 @@
+Fri Oct 30 09:46:46 PM WET 2026
+T07: portal na DMZ via WAN 192.168.1.180
+HTTP/1.1 200 OK
+Server: nginx/1.22.1
+Date: Fri, 30 Oct 2026 21:46:46 GMT
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.22.1
+Date: Fri, 30 Oct 2026 21:46:46 GMT
+8443: 000
+22: saida=124

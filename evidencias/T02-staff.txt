@@ -1,0 +1,7 @@
+Máquina: cliente-staff  Thu 22 Oct 2026 14:26:19 WEST
+--- para admin-gestao
+BLOQUEADO  10.10.10.10:22
+BLOQUEADO  10.10.10.10:443
+--- para OPNsense (10.10.40.1)
+BLOQUEADO  10.10.40.1:22
+BLOQUEADO  10.10.40.1:443

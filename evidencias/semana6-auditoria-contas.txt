@@ -1,0 +1,26 @@
+##### 1. normal
+Auditoria de contas em 2026-11-14 19:25 (limite de idade: 90 dias)
+AVISO  admin1: conta Samba sem registo de onboarding
+AVISO  ana: conta Samba sem registo de onboarding
+AVISO  rui: conta Samba sem registo de onboarding
+Resumo: 0 alerta(s)
+##### 2. limite 10 dias
+Auditoria de contas em 2026-11-14 19:25 (limite de idade: 10 dias)
+AVISO  admin1: conta Samba sem registo de onboarding
+AVISO  admin1: palavra-passe com mais de 10 dias
+AVISO  ana: conta Samba sem registo de onboarding
+AVISO  ana: palavra-passe com mais de 10 dias
+AVISO  rui: conta Samba sem registo de onboarding
+AVISO  rui: palavra-passe com mais de 10 dias
+AVISO  t13gestao: palavra-passe com mais de 10 dias
+Resumo: 0 alerta(s)
+##### 3. t13staff reativada de proposito
+Auditoria de contas em 2026-11-14 19:25 (limite de idade: 90 dias)
+AVISO  admin1: conta Samba sem registo de onboarding
+AVISO  ana: conta Samba sem registo de onboarding
+AVISO  rui: conta Samba sem registo de onboarding
+ALERTA t13staff: desativado no registo (desativado-2026-11-03) mas ativo no Samba
+Resumo: 1 alerta(s)
+##### 4. t13staff desativada outra vez
+AVISO  rui: conta Samba sem registo de onboarding
+Resumo: 0 alerta(s)

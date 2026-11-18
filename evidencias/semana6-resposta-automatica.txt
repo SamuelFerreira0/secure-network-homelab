@@ -1,0 +1,10 @@
+== resposta automatica (ver-resposta) ==
+-- log da resposta:
+2026/11/14 18:59:56 opn-block: add 10.10.40.100 -> {"status":"done"}
+2026/11/14 19:09:28 opn-block: add 10.10.40.100 -> {"status":"done"}
+2026/11/14 19:14:30 opn-block: delete 10.10.40.100 -> {"status":"done"}
+-- lista no OPNsense:
+{"total":1,"rowCount":1,"current":1,"rows":[{"ip":"192.0.2.1"}]}
+== teste Staff -> Internet ==
+443 Internet: ok
+Sat Nov 14 07:16:04 PM WET 2026

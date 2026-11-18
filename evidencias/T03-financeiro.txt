@@ -1,0 +1,5 @@
+Máquina: cliente-financeiro  Thu 22 Oct 2026 14:26:33 WEST
+--- Financeiro para Staff (deve estar BLOQUEADO)
+PING FALHA  10.10.40.100
+BLOQUEADO  10.10.40.100:445
+BLOQUEADO  10.10.40.100:22

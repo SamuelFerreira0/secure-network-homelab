@@ -1,0 +1,5 @@
+T15 lado VPN: offboarding de t13financeiro (2026-11-11)
+Antes: perfil 10.10.90.30 com handshake e 10.10.20.20:445 ABERTA
+Offboarding (offboard-user.sh): conta Samba desativada, grupo removido, ficheiro VPN com chave privada apagado
+Peer 10.10.90.30 removido no OPNsense
+Depois: latest-handshakes = 0 e 10.10.20.20:445 FECHADA

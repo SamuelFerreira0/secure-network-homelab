@@ -1,0 +1,13 @@
+== SSH reforco (sshd -T em admin-gestao) ==
+== admin-gestao ==
+port 22
+logingracetime 30
+maxauthtries 3
+permitrootlogin without-password
+pubkeyauthentication yes
+passwordauthentication yes
+x11forwarding no
+== alertas de SSH no Wazuh ==
+9 x regra 5710 nivel 5 sshd: Attempt to login using a non-existent user | origem 10.10.10.10 | agente ficheiros
+1 x regra 5712 nivel 10 sshd: brute force trying to get access to the system. Non ex | origem 10.10.10.10 | agente ficheiros
+Sat Nov 14 07:19:36 PM WET 2026

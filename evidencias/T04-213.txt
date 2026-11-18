@@ -1,0 +1,4 @@
+Máquina: cliente-staff  Thu 22 Oct 2026 14:26:56 WEST
+10.10.20.20     ficheiros.escritorio.test
+2606:4700:10::ac42:93f3 example.com
+2606:4700:10::6814:179a example.com

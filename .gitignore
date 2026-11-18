@@ -1,0 +1,51 @@
+# Segredos
+.env
+*.env
+*.key
+*.pem
+*.pfx
+*.p12
+*.kdbx
+id_rsa*
+id_ed25519*
+*secret*
+*token*
+*.psk
+
+# Configurações reais (só exemplos limpos vão para configs/)
+configs/private/
+*.ovpn
+wg*.conf
+
+# Dados de execução
+*.log
+*.pcap
+*.pcapng
+*.bak
+*.tar
+*.tar.gz
+*.zst
+*.vma
+*.qcow2
+
+# Evidências em bruto, antes de limpar
+evidencias/raw/
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# OPNsense e backups (hashes, chaves da VPN e da API)
+config.xml
+config-*.xml
+backups/
+backup/
+opnsense-ar.conf
+*apikey*
+*.secret
+registo.csv
+out/

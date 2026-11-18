@@ -1,0 +1,5 @@
+Máquina: admin-gestao  Thu 22 Oct 2026 14:26:32 WEST
+--- admin-gestao para servidores (deve estar ABERTO)
+ABERTO     10.10.20.20:22
+ABERTO     10.10.20.30:22
+ABERTO     10.10.20.40:22

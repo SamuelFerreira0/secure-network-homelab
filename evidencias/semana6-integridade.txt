@@ -1,0 +1,6 @@
+== simulacao de alteracao em massa em /srv/samba/geral ==
+1 x regra 100110 nivel 12 Alteracao em massa de ficheiros nas partilhas (possivel | agente ficheiros
+30 x regra 550 nivel 7 Integrity checksum changed. | agente ficheiros
+30 x regra 553 nivel 7 File deleted. | agente ficheiros
+29 x regra 554 nivel 5 File added to the system. | agente ficheiros
+Sat Nov 14 07:23:13 PM WET 2026

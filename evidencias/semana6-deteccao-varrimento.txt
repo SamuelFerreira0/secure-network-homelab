@@ -1,0 +1,46 @@
+== varrimento Staff -> Financeiro/Gestao (camada 1 aberta) ==
+>> camada 1 aberta, a esperar 20 s
+10.10.30.100:21 bloqueada
+10.10.30.100:22 bloqueada
+10.10.30.100:23 bloqueada
+10.10.30.100:25 bloqueada
+10.10.30.100:53 bloqueada
+10.10.30.100:80 bloqueada
+10.10.30.100:110 bloqueada
+10.10.30.100:111 bloqueada
+10.10.30.100:135 bloqueada
+10.10.30.100:139 bloqueada
+10.10.30.100:143 bloqueada
+10.10.30.100:389 bloqueada
+10.10.30.100:443 bloqueada
+10.10.30.100:445 bloqueada
+10.10.30.100:993 bloqueada
+10.10.30.100:1433 bloqueada
+10.10.30.100:3306 bloqueada
+10.10.30.100:3389 bloqueada
+10.10.30.100:5900 bloqueada
+10.10.30.100:8006 bloqueada
+10.10.10.10:21 bloqueada
+10.10.10.10:22 bloqueada
+10.10.10.10:23 bloqueada
+10.10.10.10:25 bloqueada
+10.10.10.10:53 bloqueada
+10.10.10.10:80 bloqueada
+10.10.10.10:110 bloqueada
+10.10.10.10:111 bloqueada
+10.10.10.10:135 bloqueada
+10.10.10.10:139 bloqueada
+10.10.10.10:143 bloqueada
+10.10.10.10:389 bloqueada
+10.10.10.10:443 bloqueada
+10.10.10.10:445 bloqueada
+10.10.10.10:993 bloqueada
+10.10.10.10:1433 bloqueada
+10.10.10.10:3306 bloqueada
+10.10.10.10:3389 bloqueada
+10.10.10.10:5900 bloqueada
+10.10.10.10:8006 bloqueada
+>> firewall da 213 restaurada
+== alertas com origem 10.10.40.100 (ultimos 5 min) ==
+2 x regra 100100 nivel 10 -> 10.10.30.100 : 993
+total 2

@@ -1,0 +1,36 @@
+Tue Nov  3 04:27:02 PM WET 2026
+ficheiros do t13staff em /srv/samba: 1
+== antes
+t13staff -> staff: ACESSO (esperado ACESSO)
+== offboarding
+================================================
+Offboarding: t13staff (staff)
+Conta Samba: desativada [DU         ]
+Grupo staff: removido
+Ficheiros arquivados: 1
+Ficheiro VPN com a chave privada: apagado
+------------------------------------------------
+Falta fazer a mao:
+ 1. GLPI: desativar a conta de t13staff
+ 2. OPNsense: remover o perfil VPN (IP 10.10.90.40, chave publica aCJ1O604yATIEmiSluN7afuFXwePw23p5EVFMCLc3jQ=)
+================================================
+== depois
+t13staff -> staff: NEGADO (esperado NEGADO)
+t13staff -> geral: NEGADO (esperado NEGADO)
+t13financeiro -> financeiro: ACESSO (esperado ACESSO, controlo)
+== segundo offboarding do mesmo utilizador
+o utilizador t13staff nao esta ativo no registo
+== arquivo
+total 4
+-rw------- 1 root root 163 Nov  3 16:27 t13staff-2026-11-03.tar.gz
+srv/samba/staff/teste-t13.txt
+== pasta out
+t13financeiro
+t13gestao
+== registo
+data,utilizador,departamento,aprovador,ip_vpn,estado
+2026-11-03,t13gestao,gestao,teste,10.10.90.10,ativo
+2026-11-03,t13financeiro,financeiro,teste,10.10.90.30,ativo
+2026-11-03,t13staff,staff,teste,10.10.90.40,desativado-2026-11-03
+== grupo staff
+staff:x:50:rui

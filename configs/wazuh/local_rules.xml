@@ -1,0 +1,23 @@
+<group name="local,pfsense,">
+  <rule id="100100" level="10" frequency="15" timeframe="30" ignore="30">
+    <if_matched_sid>87701</if_matched_sid>
+    <same_source_ip />
+    <srcip>10.10.0.0/16</srcip>
+    <description>Varrimento ou comunicacao proibida entre zonas internas (varios bloqueios da firewall com a mesma origem).</description>
+    <mitre>
+      <id>T1046</id>
+    </mitre>
+  </rule>
+</group>
+
+<group name="local,syscheck,">
+  <rule id="100110" level="12" frequency="20" timeframe="30" ignore="60">
+    <if_matched_group>syscheck</if_matched_group>
+    <same_location />
+    <field name="file">^/srv/samba/</field>
+    <description>Alteracao em massa de ficheiros nas partilhas (possivel ransomware).</description>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>
