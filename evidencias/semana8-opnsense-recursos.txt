@@ -1,0 +1,25 @@
+Tue Nov 24 03:24:17 PM WET 2026
+--- pve
+cpus: 2
+maxmem: 4294967296
+mem: 4265820160
+uptime: 7672
+--- opnsense
+ 3:24PM  up  2:08, 0 users, load averages: 0.36, 0.29, 0.29
+last pid: 40878;  load averages:    0.36,    0.29,    0.29  up 0+02:07:38    15:24:18
+60 processes:  1 running, 59 sleeping
+CPU:  0.7% user,  0.0% nice,  0.3% system,  0.1% interrupt, 98.9% idle
+Mem: 67M Active, 135M Inact, 411M Wired, 206M Buf, 3301M Free
+Swap: 8192M Total, 8192M Free
+
+  PID USERNAME    THR PRI NICE   SIZE    RES STATE    C   TIME    WCPU COMMAND
+28602 root          3   0    0    43M    15M kqread   1   0:02   0.00% syslog-ng
+76107 hostd        10   0    0    60M    15M uwait    1   0:01   0.00% hostwatch
+  471 root          1   0    0    74M    39M accept   0   0:01   0.00% python3.13
+ procs    memory    page                      disks       faults       cpu
+ r  b  w  avm  fre  flt  re  pi  po   fr   sr  da0  cd0   in   sy   cs us sy id
+ 0  0  0 4399959134208 3462266880 1866   0   1   1 1768   54    0    0   20  932  201  0  0 98
+ 0  0  0 4399959134208 3462258688    2   0   0   0    0   20    0    0   25  134  209  0  0 100
+ 0  0  0 4399959134208 3462258688    0   0   0   0    0   20    0    0   29  156  232  0  0 99
+ 0  0  0 4399959134208 3462258688    0   0   0   0    0   20    0    0    7   91  127  0  0 100
+ 

@@ -1,0 +1,11 @@
+# Fatores 2FA do Proxmox (sem segredos)
+2026-11-24 16:29
+root@pam:
+    recovery: recovery
+        
+
+    totp:     <id>
+        telemovel samuel
+
+    totp:     <id>
+        telemovel hugo

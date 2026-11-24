@@ -1,0 +1,14 @@
+== Portal, caminhos permitidos e bloqueados, visto da rede de casa 2026-11-24 13:39:53 ==
+/ 200
+/index.php 200
+/front/login.php 302
+/Helpdesk 302
+/lib/base.min.js 200
+/front/central.php 403
+/front/user.form.php 403
+/front/config.form.php 403
+/apirest.php 403
+/ReAuth/Prompt 403
+/plugins/ 403
+/marketplace/ 403
+/ajax/dashboard.php 403

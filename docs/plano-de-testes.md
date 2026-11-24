@@ -155,3 +155,20 @@ Os testes T01 a T04 foram feitos antes de o Wazuh passar para a VLAN 70 (semana 
 - **Procedimento:** backup de `ficheiros` e da configuração do OPNsense, parar o Unbound e medir o efeito, apagar `ficheiros` e restaurar.
 - **Esperado:** sem DNS os clientes perdem a resolução de nomes. Depois do restauro os serviços voltam e os checksums dos dados coincidem.
 - **Estado:** por fazer.
+
+
+## Testes planeados (reorientação QNRCS)
+
+Os testes T01 a T16 mantêm-se e repetem-se na bateria final (semana 12). Os T17 a T23 testam os três pontos cegos e dependem das camadas 1 a 5 (ver `docs/enquadramento.md`). Estado de todos: planeado.
+
+Regras comuns: controlo positivo antes de cada teste (confirmar que o tráfego chegou ao ponto de observação), pelo menos 5 repetições com média e dispersão. Métricas: deteção (sim ou não), tempo até ao alerta, atribuição correta ao utilizador, falsos positivos, carga de CPU e memória no OPNsense, volume de registos por dia.
+
+| Teste | Cenário | Subcategorias QNRCS | Camadas |
+|---|---|---|---|
+| T17 | Movimento lateral por porta permitida: assinaturas conhecidas de Staff para `ficheiros`:445, alerta do IDS com origem, destino e utilizador | DE.MC-1, DE.MC-3, DE.MC-7, PR.TP-4 | 3, 5 |
+| T18 | Exfiltração por volume: cópia massiva da partilha por um posto interno e por um utilizador VPN, alerta por desvio ao modelo de fluxos | DE.AE-1, DE.MC-7 | 2, 5 |
+| T19 | Chave WireGuard copiada e usada em dois locais, alerta de endpoint alternado | PR.GA-3, DE.MC-7 | 4 |
+| T20 | Utilizador VPN fora de horas e a tentar recursos fora do perfil, alerta com o nome e bloqueio registado | PR.GA-3, DE.MC-3 | 4, 5 |
+| T21 | Varrimento a partir da VPN, deteção e bloqueio automático com utilizador identificado | PR.GA-3, DE.AE-3 | 4, 5 |
+| T22 | Ligação entre duas VMs da mesma VLAN, bloqueio da firewall do Proxmox visível no Wazuh | PR.GA-5, PR.TP-1 | 1 |
+| T23 | Linha de base de 24 h de tráfego normal simulado, contagem de falsos positivos | DE.AE-1, DE.AE-3 | 2, 5 |

@@ -1,0 +1,6 @@
+== Portal com firewall do Proxmox, visto da rede de casa 2026-11-24 13:30:30 ==
+192.168.1.180:80 ABERTA
+192.168.1.180:443 ABERTA
+192.168.1.180:22 FECHADA
+HTTPS 200
+<title>Autenticação - GLPI

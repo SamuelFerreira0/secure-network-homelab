@@ -1,0 +1,46 @@
+--- OPNsense: filter (bytes, ficheiro)
+ 
+11288498 filter_20261003.log
+8182690 filter_20261004.log
+305728 filter_20261005.log
+2255717 filter_20261007.log
+9441841 filter_20261008.log
+3277758 filter_20261009.log
+3802461 filter_20261010.log
+7501226 filter_20261011.log
+6532170 filter_20261013.log
+2917315 filter_20261019.log
+2225355 filter_20261020.log
+6686771 filter_20261022.log
+6131043 filter_20261023.log
+1919226 filter_20261025.log
+3811908 filter_20261026.log
+1429485 filter_20261030.log
+4198019 filter_20261103.log
+1240401 filter_20261110.log
+8073652 filter_20261111.log
+2411545 filter_20261112.log
+6267937 filter_20261114.log
+1140968 filter_20261115.log
+3411658 filter_20261118.log
+400175 filter_20261119.log
+2471640 filter_20261120.log
+4624934 filter_20261121.log
+4174955 filter_20261123.log
+2934794 filter_20261124.log
+35 latest.log
+ 
+--- Wazuh: alertas e arquivo (bytes, ficheiro)
+516531 ossec-alerts-03.json
+312 ossec-alerts-10.json.gz
+312 ossec-alerts-11.json.gz
+0 ossec-alerts-12.json
+344543 ossec-alerts-14.json.gz
+17388 ossec-alerts-15.json
+8557 ossec-alerts-18.json.gz
+11606 ossec-alerts-19.json
+6121 ossec-alerts-20.json.gz
+167729 ossec-alerts-21.json
+2448 ossec-alerts-23.json.gz
+75423 ossec-alerts-24.json
+ 

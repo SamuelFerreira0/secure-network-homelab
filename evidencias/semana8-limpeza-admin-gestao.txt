@@ -1,0 +1,17 @@
+-- antes
+/root/Downloads/config-OPNsense.internal-20261003184914.xml
+/root/Downloads/config-OPNsense.escritorio.test-20261011185726.xml
+/root/Downloads/config-OPNsense.escritorio.test-20261030213433.xml
+/root/Downloads/config-OPNsense.escritorio.test-20261103170306.xml
+/root/Downloads/config-OPNsense.internal-20261003191740.xml
+removed '/root/Downloads/config-OPNsense.escritorio.test-20261011185726.xml'
+removed '/root/Downloads/config-OPNsense.escritorio.test-20261030213433.xml'
+removed '/root/Downloads/config-OPNsense.escritorio.test-20261103170306.xml'
+removed '/root/Downloads/config-OPNsense.internal-20261003184914.xml'
+removed '/root/Downloads/config-OPNsense.internal-20261003191740.xml'
+-- Downloads depois
+total 12
+drwxr-xr-x  2 root root 4096 Nov 24 14:51 .
+drwx------ 16 root root 4096 Nov 24 13:31 ..
+-rw-r--r--  1 root root 1874 Nov 14 17:33 agents.csv
+-- procura depois (esperado vazio)

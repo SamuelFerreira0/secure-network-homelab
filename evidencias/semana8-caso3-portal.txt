@@ -1,0 +1,17 @@
+>> saida do portal aberta no Proxmox, a esperar 20 s
+== portal 2026-11-24 14:40:41 ==
+-- controlo antes (esperado ABERTO)
+10.10.20.30:443 ABERTO
+-- varrimento a partir do portal: Staff, Financeiro e Gestao
+varrimento terminado 14:41:18
+-- controlo depois (esperado BLOQUEADO se a resposta automatica atuou)
+10.10.20.30:443 BLOQUEADO
+== Wazuh ==
+-- resposta automatica (ultimas linhas)
+2026/11/20 22:23:35 opn-block: add 10.10.40.100 -> {"status":"done"}
+2026/11/20 22:24:05 opn-block: abort ou ja bloqueado: 10.10.40.100
+2026/11/20 22:29:06 opn-block: delete 10.10.40.100 -> {"status":"done"}
+2026/11/24 14:40:57 opn-block: add 10.10.60.10 -> {"status":"done"}
+-- alertas 100100 com origem 10.10.60.10
+1
+>> 230.fw igual ao original

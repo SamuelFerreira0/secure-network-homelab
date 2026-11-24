@@ -1,0 +1,5 @@
+== SSH do pve depois do reforco 2026-11-24 14:39:00 ==
+permitrootlogin without-password
+passwordauthentication no
+kbdinteractiveauthentication no
+prova a partir do Windows: palavra-passe recusada (Permission denied (publickey)), chave aceite

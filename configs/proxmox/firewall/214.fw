@@ -1,0 +1,13 @@
+[OPTIONS]
+enable: 1
+policy_in: DROP
+policy_out: DROP
+dhcp: 1
+log_level_in: info
+log_level_out: info
+
+[RULES]
+OUT ACCEPT -p udp -dport 53 -dest 9.9.9.9
+OUT ACCEPT -p tcp -dport 53 -dest 9.9.9.9
+OUT ACCEPT -p tcp -dport 80
+OUT ACCEPT -p tcp -dport 443

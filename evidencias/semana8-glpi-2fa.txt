@@ -1,0 +1,15 @@
+# Estado do 2FA (TOTP) por conta do GLPI, 2026-11-24 (semana 8)
+# Transcricao da consulta à base de dados (nome, conta ativa, tem 2FA), com os nomes trocados por papel. O conteúdo do segredo não é lido.
+
+conta                          ativa  tem_2fa
+administracao-1                1      1
+administracao-2                1      0
+utilizador-financeiro          1      0
+utilizador-staff               1      0
+conta-de-sistema               1      0
+contas inativas (8)            0      0
+
+# Leitura: 2FA ativo numa das duas contas de administração. A segunda conta de
+# administração e os utilizadores de departamento não têm 2FA (limitação declarada,
+# docs/politicas/03-politica-acesso-remoto.md). As contas por omissão do GLPI e as
+# de teste estão inativas.

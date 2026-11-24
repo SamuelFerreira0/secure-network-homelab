@@ -1,0 +1,27 @@
+[OPTIONS]
+enable: 1
+policy_in: DROP
+policy_out: DROP
+dhcp: 1
+log_level_in: info
+log_level_out: info
+
+[RULES]
+OUT ACCEPT -p tcp -dest 10.10.70.1 -dport 443
+IN ACCEPT -p tcp -dport 1514 -source 10.10.10.0/24
+IN ACCEPT -p tcp -dport 1514 -source 10.10.20.0/24
+IN ACCEPT -p tcp -dport 1514 -source 10.10.30.0/24
+IN ACCEPT -p tcp -dport 1514 -source 10.10.40.0/24
+IN ACCEPT -p tcp -dport 443 -source 10.10.10.0/24
+IN ACCEPT -p tcp -dport 443 -source 10.10.90.10-10.10.90.19
+IN ACCEPT -p tcp -dport 22 -source 10.10.10.0/24
+IN ACCEPT -p tcp -dport 22 -source 10.10.90.10-10.10.90.19
+IN ACCEPT -p udp -dport 514 -source 10.10.70.1
+OUT ACCEPT -p udp -dport 53 -dest 10.10.70.1
+OUT ACCEPT -p tcp -dport 53 -dest 10.10.70.1
+OUT ACCEPT -p udp -dport 123 -dest 10.10.70.1
+OUT DROP -dest 10.0.0.0/8 -log info
+OUT DROP -dest 172.16.0.0/12 -log info
+OUT DROP -dest 192.168.0.0/16 -log info
+OUT ACCEPT -p tcp -dport 80
+OUT ACCEPT -p tcp -dport 443

@@ -1,0 +1,24 @@
+52:    <ignore>/var/lib/containerd</ignore>
+53:    <ignore>/var/lib/docker/overlay2</ignore>
+117:    <!-- Files/directories to ignore -->
+118:    <ignore>/etc/mtab</ignore>
+119:    <ignore>/etc/hosts.deny</ignore>
+120:    <ignore>/etc/mail/statistics</ignore>
+121:    <ignore>/etc/random-seed</ignore>
+122:    <ignore>/etc/random.seed</ignore>
+123:    <ignore>/etc/adjtime</ignore>
+124:    <ignore>/etc/httpd/logs</ignore>
+125:    <ignore>/etc/utmpx</ignore>
+126:    <ignore>/etc/wtmpx</ignore>
+127:    <ignore>/etc/cups/certs</ignore>
+128:    <ignore>/etc/dumpdates</ignore>
+129:    <ignore>/etc/svc/volatile</ignore>
+131:    <!-- File types to ignore -->
+132:    <ignore type="sregex">.log$|.swp$</ignore>
+135:    <nodiff type="sregex">^/etc/ssl/private/|^/etc/pki/tls/private/</nodiff>
+136:    <nodiff>/etc/shadow</nodiff>
+137:    <nodiff>/etc/shadow-</nodiff>
+138:    <nodiff>/etc/gshadow</nodiff>
+139:    <nodiff>/etc/gshadow-</nodiff>
+214:    <directories realtime="yes" check_all="yes">/srv/samba</directories>
+215:    <directories realtime="yes" check_all="yes">/etc/samba</directories>

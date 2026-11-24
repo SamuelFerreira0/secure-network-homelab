@@ -1,0 +1,8 @@
+-- referencias a 10.10.20 nas regras e no script de resposta
+-- exclusoes no script de resposta
+19:protegido = (
+21:    or a in ipaddress.ip_network("10.10.10.0/24")
+22:    or a in ipaddress.ip_network("10.10.70.0/24")
+26:if protegido:
+27:    log("%s protegido ou fora do ambito, ignorado (%s)" % (ip, cmd)); sys.exit(0)
+39:url = "https://10.10.70.1/api/firewall/alias_util/%s/H_BLOQUEADOS" % cmd
